@@ -6,10 +6,10 @@ console.log(teriak())
 
 console.log("============ No 2 ===========")
 function kalikan(num1, num2) {
-    return num1 * num2
+    return num1 - num2
 }
-var num1 = 12
-var num2 = 4
+var num1 = 1
+var num2 = "k"
 var hasilKali = kalikan(num1, num2)
 console.log(hasilKali)
 
