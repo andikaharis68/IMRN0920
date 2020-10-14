@@ -16,6 +16,8 @@ export default class App extends Component {
     render() {
         return (
             <View style={styles.container}>
+
+                {/* Navbar */}
                 <View style={styles.navBar}>
                     <Image source={require('./images/logo.png')} style={{ width: 98, height: 22 }} />
                     <View style={styles.rightNav}>
@@ -27,6 +29,9 @@ export default class App extends Component {
                         </TouchableOpacity>
                     </View>
                 </View>
+                {/* Navbar */}
+
+                {/* Body */}
                 <View style={styles.body}>
                     <FlatList
                         data={data.items}
@@ -35,6 +40,9 @@ export default class App extends Component {
                         ItemSeparatorComponent={() => <View style={{ height: 0.5, backgroundColor: '#E5E5E5' }} />}
                     />
                 </View>
+                {/* Body */}
+
+                {/* Footer */}
                 <View style={styles.tabBar}>
                     <TouchableOpacity style={styles.tabItem}>
                         <Icon name="home" size={25} />
@@ -53,6 +61,8 @@ export default class App extends Component {
                         <Text style={styles.tabTitle}>Library</Text>
                     </TouchableOpacity>
                 </View>
+                {/* Footer */}
+
             </View>
         );
     }
@@ -64,14 +74,13 @@ const styles = StyleSheet.create({
         paddingTop: 30,
     },
     navBar: {
-
         height: 55,
         backgroundColor: 'white',
-        elevation: 3,
-        paddingHorizontal: 15,
-        flexDirection: 'row',
+        elevation: 3,   //seperti bayangan di border
+        paddingHorizontal: 15, //jarak batas paling kanan kiri
+        flexDirection: 'row',   //sejajar kesamping
         alignItems: 'center',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between' //jarak antar menu menyesuaikan
     },
     rightNav: {
         flexDirection: 'row'

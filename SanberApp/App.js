@@ -1,19 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import Component from './Tugas/Tugas12/App'
+import AboutScreen from './Tugas/Tugas13/AboutScreen'
 
 export default function App() {
   return (
-    <Component />
+    <AboutScreen />
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#ffff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
