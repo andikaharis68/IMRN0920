@@ -1,19 +1,19 @@
 import React from 'react'
 import {
-    Platform, 
-    View, 
-    Text, 
-    Image, 
-    ScrollView, 
-    TextInput, 
-    StyleSheet, 
+    Platform,
+    View,
+    Text,
+    Image,
+    ScrollView,
+    TextInput,
+    StyleSheet,
     Button,
-    TouchableOpacity, 
+    TouchableOpacity,
     KeyboardAvoidingView
 } from 'react-native'
 
 const RegisterScreen = () => {
-    return(
+    return (
         <KeyboardAvoidingView
             behavior={Platform.OS == "android" ? "padding" : "height"}
             style={styles.container}>
@@ -39,7 +39,7 @@ const RegisterScreen = () => {
                     </View>
                     <View style={styles.kotaklogin}>
                         <TouchableOpacity style={styles.btreg} >
-                            <Text style={styles.textbt}> Daftar ? </Text>
+                            <Text style={styles.textbt}> Daftar </Text>
                         </TouchableOpacity>
                         <Text style={styles.atautext}>atau</Text>
                         <TouchableOpacity style={styles.btlogin} >
@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
         color: '#003366',
     },
     atautext: {
-        fontSize: 24,
+        fontSize: 20,
         color: '#3EC6FF',
         textAlign: "center"
     },
@@ -85,6 +85,7 @@ const styles = StyleSheet.create({
         height: 40,
         borderColor: '#003366',
         borderWidth: 1,
+        borderRadius: 5,
     },
     vbutton: {
         marginHorizontal: 90,
@@ -98,7 +99,7 @@ const styles = StyleSheet.create({
         borderRadius: 16,
         marginHorizontal: 30,
         marginTop: 10,
-        width: 140
+        width: 100
     },
     btreg: {
         alignItems: "center",
@@ -108,7 +109,7 @@ const styles = StyleSheet.create({
         borderRadius: 16,
         marginHorizontal: 30,
         marginBottom: 10,
-        width: 140
+        width: 100
     },
     textbt: {
         color: 'white',

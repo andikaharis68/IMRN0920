@@ -2,21 +2,21 @@ import React from 'react'
 import {
     Platform,
     StyleSheet,
-    Text, 
-    View, 
-    Image, 
-    TextInput, 
-    TouchableOpacity, 
-    Button, 
+    Text,
+    View,
+    Image,
+    TextInput,
+    TouchableOpacity,
+    Button,
     KeyboardAvoidingView,
-    ScrollView 
+    ScrollView
 } from 'react-native'
 
-const LoginScreen = () => {
+const LoginScreen = ({ navigation }) => {
     return (
         <KeyboardAvoidingView
-        behavior = {Platform.OS == "android" ? "padding" : "height"}
-        style = {styles.container}
+            behavior={Platform.OS == "android" ? "padding" : "height"}
+            style={styles.container}
         >
             <ScrollView>
                 <View style={styles.containerView}>
@@ -32,7 +32,7 @@ const LoginScreen = () => {
                     </View>
                     <View style={styles.kotaklogin}>
                         <TouchableOpacity style={styles.btlogin} >
-                            <Text style={styles.textbt}>  Masuk </Text>
+                            <Text style={styles.textbt} onPress={() => navigation.navigate('MyDrawwer')}>  Masuk </Text>
                         </TouchableOpacity>
                         <Text style={styles.atautext}>atau</Text>
                         <TouchableOpacity style={styles.btreg} >
@@ -116,5 +116,5 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     }
 
-    
+
 })

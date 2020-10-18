@@ -2,21 +2,21 @@ import React from 'react'
 import {
     Platform,
     StyleSheet,
-    Text, 
-    View, 
-    Image, 
-    TextInput, 
-    TouchableOpacity, 
-    Button, 
+    Text,
+    View,
+    Image,
+    TextInput,
+    TouchableOpacity,
+    Button,
     KeyboardAvoidingView,
-    ScrollView 
+    ScrollView
 } from 'react-native'
 
 const LoginScreen = () => {
     return (
         <KeyboardAvoidingView
-        behavior = {Platform.OS == "android" ? "padding" : "height"}
-        style = {styles.container}
+            behavior={Platform.OS == "android" ? "padding" : "height"}
+            style={styles.container}
         >
             <ScrollView>
                 <View style={styles.containerView}>
@@ -36,7 +36,7 @@ const LoginScreen = () => {
                         </TouchableOpacity>
                         <Text style={styles.atautext}>atau</Text>
                         <TouchableOpacity style={styles.btreg} >
-                            <Text style={styles.textbt}> Daftar ? </Text>
+                            <Text style={styles.textbt}> Daftar  </Text>
                         </TouchableOpacity>
                     </View>
                 </View>
@@ -71,7 +71,6 @@ const styles = StyleSheet.create({
         textAlign: "center"
     },
     forminput: {
-        marginHorizontal: 30,
         marginVertical: 5,
         alignContent: 'center',
         width: 294
@@ -79,7 +78,8 @@ const styles = StyleSheet.create({
     input: {
         height: 40,
         borderColor: '#003366',
-        borderWidth: 1
+        borderWidth: 1,
+        borderRadius: 5
     },
     vbutton: {
         marginHorizontal: 90,
@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
         borderRadius: 16,
         marginHorizontal: 30,
         marginBottom: 10,
-        width: 140
+        width: 100
     },
     btreg: {
         alignItems: "center",
@@ -103,7 +103,7 @@ const styles = StyleSheet.create({
         borderRadius: 16,
         marginHorizontal: 30,
         marginTop: 10,
-        width: 140
+        width: 100
     },
     textbt: {
         color: 'white',
@@ -116,5 +116,5 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     }
 
-    
+
 })

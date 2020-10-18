@@ -22,20 +22,24 @@ const AboutScreen = () => {
                 />
                 <Text style={styles.nama}>Andika Haris</Text>
                 <Text style={styles.pekerjaan}>Mahasiswa</Text>
+
+                {/* list poertofolio */}
                 <View style={styles.kotak} >
                     <Text style={styles.atas}>Portofolio</Text>
                     <View style={styles.bawah} >
                         <View>
                             <FontAwesome5 name="gitlab" size={40} color="#3EC6FF" style={styles.icon} />
-                            <Text style={styles.teks}>@Andika Haris</Text>
+                            <Text style={styles.teks}>@andika_haris</Text>
                         </View>
                         <View >
                             <FontAwesome5 name="github" size={40} color="#3EC6FF" style={styles.icon} />
-                            <Text style={styles.teks}>@Andika Haris</Text>
+                            <Text style={styles.teks}>@andika_haris</Text>
                         </View>
                     </View>
                 </View>
+                {/* list poertofolio */}
 
+                {/* list Hubungi Saya */}
                 <View style={styles.kotak} >
                     <Text style={styles.atas}>Hubungi Saya</Text>
                     <View style={styles.bawahver} >
@@ -44,7 +48,7 @@ const AboutScreen = () => {
                                 <FontAwesome5 name="facebook" size={40} color="#3EC6FF" style={styles.icon} />
                             </View>
                             <View style={{ justifyContent: 'center', marginLeft: 10 }}>
-                                <Text style={styles.teks}>@Andika Haris</Text>
+                                <Text style={styles.teks}>@andika_haris</Text>
                             </View>
                         </View>
                         <View style={styles.bawahverhub}>
@@ -52,7 +56,7 @@ const AboutScreen = () => {
                                 <FontAwesome5 name="instagram" size={40} color="#3EC6FF" style={styles.icon} />
                             </View>
                             <View style={{ justifyContent: 'center', marginLeft: 10 }} >
-                                <Text style={styles.teks}>@Andika Hariss</Text>
+                                <Text style={styles.teks}>@andika_haris</Text>
                             </View>
                         </View>
                         <View style={styles.bawahverhub}>
@@ -60,11 +64,13 @@ const AboutScreen = () => {
                                 <FontAwesome5 name="twitter" size={40} color="#3EC6FF" style={styles.icon} />
                             </View>
                             <View style={{ justifyContent: 'center', marginLeft: 10 }}>
-                                <Text style={styles.teks}>@Andika Haris</Text>
+                                <Text style={styles.teks}>@andika_haris</Text>
                             </View>
                         </View>
                     </View>
                 </View>
+                {/* list Hubungi Saya */}
+
             </View>
         </ScrollView>
     )
@@ -81,7 +87,8 @@ const styles = StyleSheet.create({
         fontSize: 36,
         fontWeight: "bold",
         color: "#003366",
-        textAlign: "center"
+        textAlign: "center",
+        bottom: 5
     },
     icon: {
         textAlign: "center"
@@ -103,9 +110,10 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         borderColor: 'blue',
         borderBottomColor: '#000',
-        padding: 5,
+        padding: 10,
         backgroundColor: '#EFEFEF',
-        marginBottom: 9
+        marginBottom: 15,
+        marginHorizontal: 20
     },
     bawah: {
         borderTopWidth: 2,

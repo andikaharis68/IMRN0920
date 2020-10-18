@@ -38,7 +38,7 @@ const index = () => {
 }
 const MainApp = () => {
     return (
-        <Tab.Navigator>
+        <Tab.Navigator >
             <Tab.Screen name="Login" component={Login} />
             <Tab.Screen name="Register" component={Register} />
         </Tab.Navigator>
